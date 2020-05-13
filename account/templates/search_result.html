@@ -1,0 +1,45 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+<div class="col-md-10   m-auto">
+      <h2><button style="color: #EE19F5 ;" >MBSTU-CSE</button></h2>
+    <div class="card">
+        <div class="card-body">
+            <form action="" method="get" class="form-inline">
+                {{ forms.as_p }}
+                <input class="btn btn-success" type="submit" value="Submit" />
+            </form>
+        </div>
+    </div>
+</div>
+
+{% if students %}
+<div class="card">
+    <div class="card-header">
+        <i class="fa fa-align-justify"></i> Result Publish</div>
+    <div class="card-body">
+        <table class="table table-responsive-sm table-bordered">
+            <thead>
+                <tr>
+                    <!--
+                    <th>#</th>
+                    <th>Name</th>
+                    -->
+                    <th>gpa</th>
+                </tr>
+            </thead>
+
+                {% for student in students %}
+            <tr>
+
+                <td> {{ student.gpa }} </td>
+
+            </tr>
+        {% endfor %}
+            
+
+        </table>
+    </div>
+</div>
+{% endif %}
+{% endblock %}
