@@ -5,5 +5,4 @@ urlpatterns = [
 
     path('login/', views.loginView, name="loginView"),
 
-
 ]
