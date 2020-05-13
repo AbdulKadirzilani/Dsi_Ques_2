@@ -19,9 +19,9 @@ def loginView(request):
                     print(students)
 
                     if students:
-                        return render(request, 'thankyou.html')
+                        return HttpResponse("Sucessfully Login")
                     else:
-                        return HttpResponse("Username or password incorrect")
+                        return HttpResponse("Email or password incorrect")
 
 
             context = {'forms': forms}
