@@ -1,9 +1,8 @@
 
-from django.shortcuts import render,HttpResponse, redirect
-from django.contrib.auth import authenticate, login
+from django.shortcuts import render
 from .forms import loginForm
 from django.http import HttpResponse
-from .models import Information
+from .models import DatabaseField
 
 def loginView(request):
 
@@ -15,7 +14,7 @@ def loginView(request):
             print(email)
             print(password)
             if email and password:
-                    students = Information.objects.filter(email = email).filter(password__contains =  password)
+                    students = DatabaseField.objects.filter(email = email).filter(password__contains =  password)
                     print(students)
 
                     if students:

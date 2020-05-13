@@ -1,10 +1,13 @@
 from django.db import models
 
-class Information(models.Model):
+
+# Use Object Relational Mapping ( ORM )
 
 
-    email = models.EmailField()
-    password = models.CharField(max_length=50)
+class DatabaseField(models.Model):
+
+     email = models.EmailField()
+     password = models.CharField(max_length=50)
 
 
 
