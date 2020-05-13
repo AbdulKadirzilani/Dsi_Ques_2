@@ -1,8 +1,8 @@
 # Dsi_Ques_2
 
-
--Use ORM
--Version control
+# use this functionality
+-  ORM
+- Version control
 - sqlit database
 - django framework
 - UI design bootstrap
