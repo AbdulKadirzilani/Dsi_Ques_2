@@ -2,29 +2,13 @@
 from django.shortcuts import render,HttpResponse, Http404, get_object_or_404, redirect
 #from .models import author, category, article, comment
 from django.contrib.auth import authenticate, login, logout
-#
-# from django.contrib.sites.shortcuts import get_current_site
-# from django.template.loader import render_to_string
-# from django.conf import settings
-# from django.core.mail import send_mail
-# #from .token import activation_token
-# #from .models import registerUser
-from .froms import RegisterForms
 from .forms import loginForm
 from django.http import HttpResponse
 from django.shortcuts import render
 from django.contrib.sites.shortcuts import get_current_site
-from django.utils.encoding import force_bytes, force_text
-from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
-from django.template.loader import render_to_string
-#from .forms import SignUpForm
-from .tokens import account_activation_token
 from django.contrib.auth.models import User
 from django.core.mail import EmailMessage
 from .models import Information
-
-
-
 
 def search_student(request):
     print("ok")
