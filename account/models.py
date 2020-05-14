@@ -1,8 +1,8 @@
+
+
+#Use Object Relational Mapping ( ORM )
+
 from django.db import models
-
-
-# Use Object Relational Mapping ( ORM )
-
 
 class DatabaseField(models.Model):
 

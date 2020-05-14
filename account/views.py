@@ -1,4 +1,6 @@
 
+# Create all Query for LoginView
+
 from django.shortcuts import render
 from .forms import loginForm
 from django.http import HttpResponse
